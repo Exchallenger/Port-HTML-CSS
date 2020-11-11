@@ -1,0 +1,136 @@
+ <nav class="navbar">
+            <i class="fas fa-star-of-life"></i>
+            <span>Jihun</span>
+        </nav>
+        <div class="header__btn">
+            <ul>
+                <li class="header__items"><a href="">Home</a></li>
+                <li class="header__items"><a href="">About</a></li>
+                <li class="header__items"><a href="">Skills</a></li>
+                <li class="header__items"><a href="">Testimonial</a></li>
+                <li class="header__items"><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <img src="" alt="">
+            <div class="nav__introduce"></div>
+            <div class="nav__explain"></div>
+            <button class="nav__btn">CONTACT ME</button>
+        </nav>
+        <section class="aboutme">
+            <div>About me</div>
+            <div>Lorem ipsum sit amet, consecteur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In voluopat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id,viverra eget nibh. Suspendisse luctus mattis cur</div>
+            <div>
+                <ul>
+                    <li class="aboutme__language">
+                        <img src="" alt="">
+                        <div>Front-end</div>
+                        <div>HTML, CSS, Javascript, TypeScript, React, Vue, Web APIs</div>
+                    </li>
+                    <li class="aboutme__language">
+                        <img src="" alt="">
+                        <div>Moblie</div>
+                        <div>Android, iOS, React Native, Flutter, Java, Swift, Kotlin</div>
+                    </li>
+                    <li class="aboutme__language">
+                        <img src="" alt="">
+                        <div>Back-end</div>
+                        <div>Java, Javascript, Go, NodeJS, Rest APIs, GraphGL</div>
+                    </li>
+                </ul>
+            <div class="aboutme__career">
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <div>Currently working at Samsung as Software Engineer</div>
+                        <div>2019 Sept - Until now</div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div>Currently working at Faceboo as Software Engineer</div>
+                        <div>2019 Sept - Until now</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills">
+            <div>Skills</div>
+            <div>Skills & Attributes</div>
+            <div>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed</div>
+            <form class="skills_percent">
+                <div>
+                    <span>Skills</span>
+                    <ul class="skills__language">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>TYPESCRIPT</li>
+                        <li>REACT</li>
+                        <li>NODEJS</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Tools</div>
+                    <ul class="skills__tools">
+                        <li>Android development tools</li>
+                        <li>iOS development tools</li>
+                        <li>Sublime Text with Plug-ings</li>
+                        <li>Visiul Studio</li>
+                        <li>Team Foundation</li>
+                        <li>Adobe Programs</li>
+                        <li>Sketch app</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Etc</div>
+                    <ul>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+        <section class="mywork">
+            <div>My work</div>
+            <div>Projects</div>
+            <ul class="mywork__btn">
+                <li><button>All</button></li>
+                <li><button>Front-end</button></li>
+                <li><button>Back-end</button></li>
+                <li><button>Moblie</button></li>
+            </ul>
+            <div class="mywork__img">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+        <section class="testimonials">
+            <div>Testimonials</div>
+            <div>See what they say about me</div>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditis, porro qula? Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati, sapiente iste quia magnam? Veritatis quos aspernatur natus simlilque.</div>
+                    <div>Jihun/TigerSplike</div>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditis, porro qula? Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati, sapiente iste quia magnam? Veritatis quos aspernatur natus simlilque.</div>
+                    <div>Jihun/TigerSplike</div>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <div>Let's talk</div>
+            <div>dream.coder.ellie@gmail.com</div>
+            <div><ul>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul></div>
+            <div>2020 Dream Coding Ellie All rights reserved</div>
+        </footer>
