@@ -1,3 +1,7 @@
+opacity: 0; >> 투명
+color: transparent; > 투명
+
+
 :only-child 자식요소를 하나만 가지는것
 nth-last-child, nth-child : nth-last-child(n+1)> 뒤에서 1번째포함 모든요소 
 
@@ -77,6 +81,7 @@ background =  center/cover no-reapeat url(이미지링크) 이렇게 쓰면 깔�
 
 
 transform
+transform은 만약 y로 10이동해놓았고  transalteY(-10)이면 원래위치에서 -10즉 0이아니라 원점기준 -10이동한다. 그래서 원점으로 가려면 transalteY(0)을 해야한다.
 x축은 오른쪽 y축은 아래로 갈수록 값이 커진다
 scale(실수) : 원래 크기에 비해 실수배만큼 커진다
 rotate(숫자deg) : 숫자도 만큼 돌아간다
