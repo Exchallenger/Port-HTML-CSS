@@ -5,8 +5,6 @@ display : lnline>>한줄에 나열 block>>한줄에 한블럭 inline-block>> 한
 
 % vs vh vw : vh는 보이는곳의 퍼센트 %는 그 컨텐츠박스의 퍼센트
 
-position : relative>> 원래있던 위치에서 이동 덮어쓰기 x absolute >> 가장가까운 박스에서 이동 덮어쓰기 ㅇ fixed : 웹페이지 기준이고 덮어쓰기 ㅇ
-           sticky : 원래있던위치 고정이지만 따라다님
 
            flex box : 
                 flex-direction: 기본값 row 기준축 설정 column은 기준축을 수직으로 변경 ###컨텐츠 순서에도 영향o
@@ -49,3 +47,75 @@ border-radious >> 동그랗게 만들기 50%하면 동그래짐 5%하면 꼭지�
 flex : 1 1 60% 
 flex : 1 1 30% 각각퍼센트를 화면에서 차지하고 가로세로 각각 1배씩 늘어난다는 의미
 flex : 1 1 10%
+
+컨텐츠 박스의 기본값은 box-sizing: content-box; 이다 이것은 패딩과 보더를 넣어도 크기는안변하고 그밖에 덧붙여진다
+그러나 box-sizing: border-box 이면 패딩과 보더를 넣으면 전체크기는 변하지 않고 안으로 덮어쓰기가 된다.
+
+
+position
+포지션의 기본값은 static이다
+relative는 원래 위치에서 이동 주변 컨텐츠는 재배치 되지 않는다
+absolute는 가장 가까운 부모가 relative인 부모를 찾아서 그 부모를 기준으로 지정한 위치만큼이동 이때 주변 컨텐츠가 재배치된다.
+sticky는 부모의 위치를 기준으로 한다 만약 top left같은 값을 지정해주지 않으면 아무런 변화가없다. 지정해준 위치에 스크롤하면 따라온다
+fixed는 부모와 상관없이 뷰포트기준으로 된다 만약 부모가 100,100이고 컨텐츠가 0,0이면 웹페이지 기준 0,0으로간다 
+
+
+margin은 div기준으로 오른쪽에 들어간다 그래서 margin: auto;를 해주면 가운데로 정렬이된다.(수평만 적용가능)
+text-align은 값을 만약 center로 주면 div에선 아무일이 일어나지 않는다 이미 마진이있기 때문이다. 그러나 버튼같은것에 주면 가운데정렬이 된다.
+     즉 블럭레벨은 적용이안되고 다른 것들에서는 적용이 된다. 블럭레벨은 margin=auto;를 넣어주고 이용해야한다. (수평만 가능)
+line-height : 텍스트를 수직으로 가운데정렬할때 사용. 부모 높이를 그대로 입력해주면 된다.
+     대신 두줄은 불가능 line-height의 원래 의미는 한줄의 높이를 지정하는 것이다.
+transform : translate(50%, 50%) x축 50% y축 50%부모 기준으로 이동함
+
+background
+background-reapeat = no-reapeat; 이면 이 사진의 길이를 넘어도 사진이 다시 반복되지않음
+background-position = center; 이면 만약 사진이 500x500이고 박스가 100x100이면 위에서 100x100만큼 나올텐데 센터로하면 그 가운데에서 100만큼 보인다.
+background-size = cover; 이면 남은 공간을 차지하면서 사진이 반응형처럼 된다.
+위처럼 하면 세줄을 쓴다 코드가 깔끔하려면 한줄에 써도된다
+여기서 사이즈는 어떤거뒤에 /사이즈 하면된다.
+background =  center/cover no-reapeat url(이미지링크) 이렇게 쓰면 깔끔하다
+
+
+transform
+x축은 오른쪽 y축은 아래로 갈수록 값이 커진다
+scale(실수) : 원래 크기에 비해 실수배만큼 커진다
+rotate(숫자deg) : 숫자도 만큼 돌아간다
+트랜스 폼도 한번에 가능하다 
+transform : translate(50px,50px) scale(1.2) rotate(45deg); 이렇게 한줄에 깔끔하게 가능
+
+transition
+
+위치로 이동,크기,위치변화는 transform 마우스커서는 hover이용
+
+transition은 동적인변화를 주는데 이용 ex) 마우스를 올리면 색깔이 바뀌는 것을할때 스르륵바뀌게 해준다
+transition-property: background-color >>어떤 것을 변화를 줄건지
+transition-duration : 300ms >>시간지정
+transition-timing-function : linear
+이거도 줄일 수 있다
+transition: background-color 300ms linear; 이렇게
+박스안에서 모든요소에게 적용되게 하려면 transition: all뒤에 변형시킬거 입력
+
+transition-duration
+linear: 처음부터 끝까지 같은속도 
+ease-in-out : 처음엔 빠르다가 점점 느려짐
+ease-in : 마지막에만 천천히
+cubic-bezier : 속도랑 어떻게 할껀지 사용자 설정처럼 지정가능
+
+변수지정
+:root{
+     안에 변수 넣고 사용
+}
+만약 @media에서도 사용하려면 {
+     이안에 :root{
+          해서 값을 넣으면 이 변수는 여기서만 적용이 된다.
+     }
+}
+--변수명: 임의의 값
+사용할때는 var(변수명) 사용
+만약 두배로 하고싶다 calc(var(변수명)*정수) 이렇게 사용
+
+html : data-
+ex) <div data-display-name="good"></div>
+이렇게 해놓으면 나만 쓸수가 있다 html,js,css에서 읽을수없다.
+사용 할때는
+div[div data-display-name="good"] 이렇게하면 이요소만 적용이 된다.
