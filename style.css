@@ -458,6 +458,28 @@ p {
   color: var(--color-yellow);
 }
 
+/* arrow btn */
+.arrow__btn {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in;
+  cursor: none;
+  pointer-events: none;
+}
+.arrow__btn.visible {
+  opacity: 1;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
