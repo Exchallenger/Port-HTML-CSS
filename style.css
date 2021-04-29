@@ -5,8 +5,10 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  /* --color-pink: #fe918d; */
+  --color-pink: #0061a8;
+  /* --color-dark-pink: #ff6863; */
+  --color-dark-pink: #77acf1;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -127,15 +129,13 @@ p {
   display: block;
 }
 .navbar__logo {
+  color: white;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
-.navbar__logo img {
-  width: 10%;
-  height: 10%;
-  padding: 0;
-}
+
 .navbar__menu__item {
+  color:white;
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
@@ -226,7 +226,7 @@ p {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: #ff6863;
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -319,7 +319,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-pink);
   color: var(--color-white);
 }
 
