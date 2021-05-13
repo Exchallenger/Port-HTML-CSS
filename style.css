@@ -130,8 +130,13 @@ p {
 }
 .navbar__logo {
   color: white;
+  padding-left: 12px;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+
+.navbar__title{
+  margin-left:4px;
 }
 
 .navbar__menu__item {
@@ -511,6 +516,10 @@ p {
     top: 16px;
     right: 16px;
     font-size: var(--font-medium);
+  }
+
+  .navbar__logo{
+    padding-left: 0px;
   }
   #navbar {
     flex-direction: column;
